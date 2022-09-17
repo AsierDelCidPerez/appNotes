@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index2.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cross-env NODE_ENV=development nodemon index.js",
+    "test": "cross-env NODE_ENV=test jest --verbose --runInBand",
+    "cypress:open": "cypress open",
+    "start:test": "cross-env NODE_ENV=test node index.js"
+  },
+  "author": "Asier Del Cid",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^6.0.0",
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.0",
+    "mongoose-unique-validator": "^3.1.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "cypress": "^10.4.0",
+    "eslint": "^8.21.0",
+    "jest": "^28.1.2",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.4"
+  }
+}
